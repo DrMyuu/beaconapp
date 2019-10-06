@@ -1,0 +1,53 @@
+.first-modal-background {
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(93,202,209,1) 82%, rgba(113,248,255,1) 100%);
+    min-height: 667px;
+}
+
+.first-modal-spacing {
+    margin-top: 8%;
+}
+
+.first-modal {
+    background-color: #F3CD74;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    font-family: futura;
+}
+
+.first-modal-card-body{
+    font-size: 25px;
+    font-family: futura;
+}
+
+.first-modal-buttons-green {
+    width: 45%
+}
+
+.first-modal-card-footer {
+    background-color: #F3CD74;
+    width: 100%;
+}
+
+.first-modal-buttons-cancel {
+    float: right;
+    width: 45%;
+}
+
+.first-modal-spacing-shelter {
+    margin-top: 1%;
+}
+
+.first-modal-buttons-green-shelter {
+    float: LEFT;
+}
+
+.first-modal-buttons-cancel-shelter {
+    float: right;
+    
+}
+
+.btn {
+    font-family: futura;
+}

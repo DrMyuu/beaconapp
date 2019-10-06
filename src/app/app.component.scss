@@ -1,0 +1,25 @@
+.toolbar-title {
+    text-align: left;
+    // margin-left: -50px;
+}
+
+.toolbar-content {
+    padding-right: 10px !important;
+}
+
+.header-image {
+        width: 40px;
+}
+
+ion-title.toolbar-title.ios.title-ios.title-default.hydrated {
+    // margin-left: -80px;
+    background-color: #1C2143;
+    color: white;
+    font-size: 22px;
+    font-family: futura;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+

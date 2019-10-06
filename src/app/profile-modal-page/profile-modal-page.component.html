@@ -1,0 +1,94 @@
+<div class="container-fluid first-modal-background" style="padding-top: 2% !important;">
+  <div [ngSwitch]="page">
+    <div *ngSwitchCase="'start'">
+      <div class="card first-modal-spacing">
+        <div class="card-header first-modal">
+          <span>What is Beacon?</span>
+        </div>
+        <div class="card-body">
+          <p class="first-modal-card-body">Beacon is a <b>smart</b> crisis preparedness app built to help keep people in the community prepared, informed and connected.</p>
+          <p class="first-modal-card-body">Based on a few questions, we'll prepare a profile with recommended shelter, supplies and guides in case of an emergency.</p>
+        </div>
+        <div class="card-footer first-modal-card-footer">
+          <div class="first-modal-card-footer">
+            <button class="btn btn-success first-modal-buttons-green" (click)="switchPage('shelter_options')">Get Started</button>
+            <button class="btn btn-secondary first-modal-buttons-cancel" (click)="dismiss()">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'shelter_options'">
+      <div class="card first-modal-spacing-shelter">
+        <div class="card-header first-modal">
+          <span>Selecting a Shelter</span>
+        </div>
+        <div class="card-body first-modal-card-body">
+          <p>Just in case you need to evacuate, what are some things we need to know in order to select the right shelter?</p>
+          <hr />
+          <form>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label first-modal-card-body">Will you need to go to a special needs shelter?</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label first-modal-card-body">Will you be evacuating with your pets? (Livestock and Reptiles are generally not accepted)</label>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer first-modal-card-footer">
+          <button class="first-modal-card-footer">
+            <button class="btn btn-success first-modal-buttons-green-shelter" (click)="switchPage('supply_options')">Confirm My Options</button>
+            <button class="btn btn-secondary first-modal-buttons-cancel-shelter" (click)="switchPage('start')">Back</button>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'supply_options'">
+      <div class="card first-modal-spacing-shelter">
+          <div class="card-header first-modal">
+            <span>Special Supplies</span>
+          </div>
+          <div class="card-body first-modal-card-body">
+            <p>Do you require any specialized medicine or health equipment?</p>
+            <hr />
+            <form>
+              <div class="form-check">
+                <input class="form-check-input" type="radio">
+                <label class="radio-inline form-check-label"> Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" checked>
+                <label class="radio-inline form-check-label">
+                No
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer first-modal-card-footer">
+            <button class="first-modal-card-footer">
+              <button class="btn btn-success first-modal-buttons-green-shelter" (click)="switchPage('finish')"> Finalize My Profile</button>
+              <button class="btn btn-secondary first-modal-buttons-cancel-shelter" (click)="switchPage('shelter_options')">Back</button>
+            </button>
+          </div>
+        </div>
+    </div>
+    <div *ngSwitchCase="'finish'">
+      <div class="card first-modal-spacing-shelter">
+        <div class="card-header first-modal">
+          <span>Success!</span>
+        </div>
+        <div class="card-body first-modal-card-body">
+          <p>Your profile has been completed.<br />
+            <br /> Please click the button below to begin using Beacon.</p>
+        </div>
+        <div class="card-footer first-modal-card-footer">
+          <button class="first-modal-card-footer">
+            <button class="btn btn-success" (click)="dismiss()">Begin Using Beacon</button>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

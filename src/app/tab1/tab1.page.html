@@ -1,0 +1,39 @@
+<ion-content>
+    <div class="container-fluid splash-background" style="padding-top: 20% !important;">
+        <!-- <div class="alert alert-primary" *ngIf="loading">
+            <span><i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Please wait, loading...</span>
+        </div> -->
+        <div class="card">
+            <div class="card-header first-modal">
+                <span>SHELTER MAP</span>
+            </div>
+            <div class="card-body" style="height: 40vh;">
+                <div style="height: 35vh;" id="map"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body first-modal-tab1" style="height: 20vh; overflow-y: scroll;">
+                <div [ngSwitch]="page">
+                    <div *ngSwitchCase="'shelters'">
+                        <div class="card" *ngFor="let shelter of shelters">
+                            <div class="card-header">
+                                <span>{{shelter.name}}</span>
+                            </div>
+                            <div class="card-body">
+                                <p><input type="checkbox" [(ngModel)]="shelter.disabled"/> Disability Access</p>
+                                <p><input type="checkbox" [(ngModel)]="shelter.pets"/> Pets Allowed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer first-modal-card-footer">
+                <div class="btn-group btn-block">
+                    <button class="btn btn-primary float-right" (click)="switchPage('shelters')">Search Shelters</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>
+
+    

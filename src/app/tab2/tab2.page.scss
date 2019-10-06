@@ -1,0 +1,41 @@
+.first-modal {
+    background-color: #F3CD74;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    font-family: futura;
+    line-height: 60px;
+  }
+
+  .card-body {
+      padding: 0px;
+  }
+
+  .float-right {
+    float: right !important;
+    height: 90%;
+    background-color: #5DCAD1;
+    color: rgb(2,0,36);
+    width: 100%;
+    padding-top: 2%;
+}
+
+.float-right-buttons {
+    float: right !important;
+    height: 90%;
+    background-color: #5DCAD1;
+    color: rgb(2,0,36);
+    width: 100%;
+    margin-top: 3%;
+}
+
+.splash-background {
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(93,202,209,1) 82%, rgba(113,248,255,1) 100%);
+    min-height: 667px;
+    padding-top: 15%;
+}
+
+.text-center {
+    text-align: center;
+}

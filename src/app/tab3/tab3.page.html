@@ -1,0 +1,28 @@
+<ion-content>
+  <div class="container-fluid splash-background" style="padding-top: 20% !important;">
+          <div class="card first-modal">
+              <div class="card-header first-modal">
+              <span>HURRICANE GUIDES</span>
+          <!-- <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" style="width: 150px !important;">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav> -->
+          <div class="card-body" style="height: 60vh; overflow-y: auto;">
+            <div *ngFor="let guide of guides">
+              <div class="card">
+                <div class="card-header">
+                  <span><button class="btn btn-primary btn-sm" (click)="toggleGuide(guide)">+</button> {{guide.Problem}}</span>
+                </div>
+                <div class="card-body" *ngIf="guide.visible">
+                  <p>{{guide.Answer}}</p>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+</ion-content>

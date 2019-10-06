@@ -1,0 +1,26 @@
+.splash-background {
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(93,202,209,1) 82%, rgba(113,248,255,1) 100%);
+    min-height: 667px;
+    padding-top: 15%;
+}
+
+.first-modal {
+    background-color: #F3CD74;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    font-family: futura;
+  }
+
+  .card-header {
+      padding: 10px;
+  }
+
+  .card-body {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    padding: 0px;
+    font-size: 20px;
+    text-align: left;
+}

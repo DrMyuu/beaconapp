@@ -1,0 +1,31 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+.splash-background {
+  background: rgb(2,0,36);
+  background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(93,202,209,1) 82%, rgba(113,248,255,1) 100%);
+  min-height: 667px;
+  padding-top: 15%;
+}
+
+.first-modal {
+  background-color: #F3CD74;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+  font-family: futura;
+}
+
+.first-modal-tab1 {
+  font-family: futura;
+  background-color: #F3CD74;
+  font-size: 15px;
+}
+
+.first-modal-card-footer {
+  background-color: #F3CD74;
+  width: 100%;
+  font-family: futura;
+}
